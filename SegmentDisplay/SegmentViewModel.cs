@@ -45,6 +45,7 @@ namespace SegmentDisplay
         private bool[][] _digits =
         {
             new bool[]{true, true, true, true, true, true, false}, // zero
+                 new bool[]{false, true, true, false, false, false, false}, // one
 
         };
 
@@ -73,10 +74,10 @@ namespace SegmentDisplay
         {
             Number = _digits[_countIndex];
 
-            if (_countIndex == 0) ;
-
+            if (_countIndex ==0)
+                _countIndex++;
             else
-                _countIndex = 0;
+                _countIndex=0;
         }
     }
 }
