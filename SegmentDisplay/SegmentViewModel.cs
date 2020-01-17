@@ -51,6 +51,7 @@ namespace SegmentDisplay
                new bool[]{false, true, true, false, false, true, true}, // four
                       new bool[]{true, false, true, true, false, true, true}, // five
                         new bool[]{true, false, true, true, true, true, true}, // six
+                           new bool[]{true, true, true, false, false, false, false}, // seven
         };
 
         //Display the number as a 7-point segment
@@ -78,7 +79,7 @@ namespace SegmentDisplay
         {
             Number = _digits[_countIndex];
 
-            if (_countIndex < 6)
+            if (_countIndex < 7)
                 _countIndex++;
             else
                 _countIndex=0;
